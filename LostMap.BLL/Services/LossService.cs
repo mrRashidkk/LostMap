@@ -1,5 +1,6 @@
 ﻿using LostMap.BLL.Interfaces;
 using LostMap.BLL.Models;
+using LostMap.DAL.InitData;
 using LostMap.DAL.Interfaces;
 using LostMap.DAL.Models;
 using System;
@@ -29,7 +30,8 @@ namespace LostMap.BLL.Services
                 Latitude = lossDto.Latitude,
                 Longitude = lossDto.Longitude,
                 Created = DateTime.Now,
-                CreatorId = creator.Id
+                CreatorId = creator.Id,
+                StatusId = StatusData.Ids.Active
             };
 
             _unitOfWork.LossRepository.Create(loss);

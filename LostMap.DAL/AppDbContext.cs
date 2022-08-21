@@ -11,6 +11,7 @@ namespace LostMap.DAL
         public DbSet<Permission> Permissions { get; set; }
         public DbSet<Loss> Losses { get; set; }
         public DbSet<Finding> Findings { get; set; }
+        public DbSet<Status> Statuses { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
@@ -23,7 +24,7 @@ namespace LostMap.DAL
                 .IsUnique();
 
             modelBuilder.Entity<Role>().HasData(RoleData.Roles);
-            modelBuilder.Entity<User>().HasData(UserData.Admin);
+            modelBuilder.Entity<Status>().HasData(StatusData.Statuses);
 
             base.OnModelCreating(modelBuilder);
         }

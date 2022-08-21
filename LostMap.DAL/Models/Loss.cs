@@ -21,5 +21,9 @@ namespace LostMap.DAL.Models
         public DateTime Created { get; set; }
 
         public DateTime Lost { get; set; }
+
+        public Guid StatusId { get; set; }
+
+        public Status Status { get; set; }
     }
 }
