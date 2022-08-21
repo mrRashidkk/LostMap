@@ -1,0 +1,12 @@
+.account-form {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  width: 400px;
+  padding: 15px;
+}
+
+.account-form-control {
+  margin-bottom: 10px !important;
+}

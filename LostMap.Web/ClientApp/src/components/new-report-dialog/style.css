@@ -1,0 +1,20 @@
+.new-report-dialog .form {
+  padding: 0 1.5em 1em 1.5em;
+}
+
+.new-report-dialog .form-control {
+  margin-bottom: 1em;
+}
+
+.new-report-dialog .actions {
+  display: flex;
+  justify-content: end;
+}
+
+.new-report-dialog .button {
+  margin-left: 1em;
+}
+
+.new-report-dialog .close-button {
+  float: right;
+}

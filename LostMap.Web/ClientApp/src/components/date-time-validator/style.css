@@ -1,0 +1,9 @@
+.date-time-validator .error-text {
+  color: #d32f2f;
+  margin: 3px 14px 0 14px;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+}
